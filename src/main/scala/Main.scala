@@ -25,5 +25,19 @@ object Main {
       println("Value y= " + y)
       y += 10
     } while (y == 100)
+
+    for (i <- 1 to 5) {
+      println("i using TO method: " + i)
+    }
+    for (i <- 1 until 5) {
+      println("i using UNTIL method " + i)
+    }
+
+    for (i <- 1 to 5; j <- 1 until 5) {
+      println("i  and j using nested loop: " + i + " " + j)
+    }
+
+    val square = for {i <- 1 to 5} yield { i * i}
+    println(square)
   }
 }
