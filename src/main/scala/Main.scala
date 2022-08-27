@@ -1,7 +1,12 @@
+// Scala is a very scalable and flexible language
+
 object Main {
 
+  //In Scala, an object is a named instance with members such as fields and methods, its an singleton instance
   object Math {
     // int addNum(int m, int n) { return }
+
+    // ded is used to define a method.
     def addNum(m: Int, n: Int): Int = {
       return m + n
     }
@@ -14,6 +19,12 @@ object Main {
 
     def divideNum(m: Int, n: Int) = m / n
 
+  }
+
+  object Student {
+    def info(name: String, age: Int, rollNum: Int) = {
+      println("Students name is: " + name + " , his age is " + age + " his roll number is " + rollNum)
+    }
   }
 
   def main(args: Array[String]): Unit = {
@@ -85,5 +96,6 @@ object Main {
     println(Math.subNum(3, 4))
     println(Math.multiplyNum(3, 4))
     println(Math.divideNum(3, 4))
+    Student.info("Mark", 22, 12)
   }
 }
