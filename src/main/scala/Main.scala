@@ -17,11 +17,11 @@ object Main {
   }
 
   def main(args: Array[String]): Unit = {
-      val myName = "Anupreet"
-      val myAge = 21;
+      val myName = "Paul"
+      val myAge = 20;
 
     if (myAge == 20) {
-      println("My name is " + myName + " and my age is " + myAge + ".")
+      println("My name is " + myName + " and my age is " + myAge + " using concatenation.") //concatenation
       println(s"$myName is $myAge years old.") //s interpolation
       println(f"$myName%s is $myAge years old.") // type safe
       println(raw"Hello \nworld") // prints literal code
@@ -36,6 +36,7 @@ object Main {
     while(x <= 50) {
       println("Value x = " + x)
       x += 10;
+      //cannot do x++
     }
     var y = 0
     do {
@@ -58,7 +59,6 @@ object Main {
     println(square)
 
     // Match as statement
-
     val num = 50
 
     num match {
